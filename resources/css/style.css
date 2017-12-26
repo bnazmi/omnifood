@@ -195,3 +195,43 @@ header {
 
 /* Features Section */
 
+.features-section .long-copy {
+    margin-bottom: 30px;
+}
+/* Meals Section */
+
+.meals-section {
+    padding: 0;
+
+}
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    opacity: 0.7; 
+    transition: transform 0.5s ,opacity 0.5s;   
+}
+
+.meal-photo img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}

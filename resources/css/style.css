@@ -37,6 +37,10 @@ html {
 
 }
 
+li {
+    list-style: none;
+}
+
 section {
     padding: 80px 0;
 }
@@ -279,7 +283,7 @@ header {
 /* ---------------------------- */
 
 .steps-section {
-    background-color: rgb(230, 230, 230);
+    background-color: #f4f4f4;
 }
 .steps-box:first-child {
     text-align: right;
@@ -384,3 +388,55 @@ cite img {
     vertical-align: middle;
     margin-right: 10px;
 }
+
+/* ---------------------------- */
+/* Plans Section */
+/* ---------------------------- */
+
+.plans-section{
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #fff;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5px ;
+    box-shadow: 0 2px 2px #acacac;
+}
+
+.plan-box div {
+    border-bottom: 1px solid #e4e4e4;
+    padding: 15px;
+}
+
+.plan-box div:first-child {
+    background-color: #f8f8f8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    border: none;
+    text-align:center; 
+}
+
+.plan-box ul li {
+    padding: 2px;
+}
+
+.plan-price {
+    font-size: 300%;
+    color: #e67e22;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+.plan-price span {
+    font-size: 30%;
+}
+
+.plan-price-meal {
+    font-size: 90%;
+}
+

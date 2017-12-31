@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 html {
     background-color: #fff;
     color: #555;
@@ -119,7 +123,8 @@ h3{
 /* BUTOONS */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     text-decoration: none;  
@@ -131,7 +136,8 @@ h3{
 
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
    background-color: #e67e22;
    border: 1px solid #e67e22;   
    margin-right: 20px;
@@ -144,7 +150,9 @@ h3{
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #cf6d17;
     
 }
@@ -440,3 +448,27 @@ cite img {
     font-size: 90%;
 }
 
+/* ---------------------------- */
+/* Contact Form Section */
+/* ---------------------------- */
+.contact-section  {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}

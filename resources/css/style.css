@@ -472,3 +472,68 @@ textarea {
 input[type=checkbox] {
     margin: 10px 5px 10px 0;
 }
+
+/* ---------------------------- */
+/* Footer Section */
+/* ---------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 60px;
+}
+
+.navigation-link {
+    float: left;
+}
+
+.social-link {
+    float: right;
+    font-size: 150%;
+}
+
+.navigation-link li ,
+.social-link li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.navigation-link a:link,
+.navigation-link a:visited,
+.social-link a:link,
+.social-link a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #9e9e9e;
+    transition: color 0.2s;
+}
+
+.navigation-link a:hover,
+.navigation-link a:active {
+    color: #cccccc;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-instagram {
+    transition: 0.2s !important;
+}
+
+.ion-social-facebook:hover {
+    color: #3B5998 !important;
+}
+
+.ion-social-twitter:hover {
+    color: #00B6F1 !important;
+}
+
+.ion-social-instagram:hover {
+    color: #2C6A93 !important;
+}
+.ion-ios-heart {
+    color: #cc4141;
+    font-size: 120%;
+}
+footer p {
+    text-align: center;
+    margin-top: 30px;
+}

@@ -1,0 +1,79 @@
+
+/* big tablet to 1200px */
+@media only screen and (max-width : 1200px) {
+    header { height: 66vh; }
+    .hero-text-box {
+        width: 100%;
+        padding: 0 3%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+    }    
+    .row {padding: 0 2%;}
+    h2 {font-size: 160%;}
+    .plan-box {
+        width: 100%;
+        margin: 0;
+    }
+    .contact-section {width: 90%;}
+    section {padding: 60px 0;}
+}
+/* small tablet to big tablet [from 768px to 1023 */
+@media only screen and (max-width : 1023px) {
+    html,
+    body {
+        font-size: 18px;
+    }
+    .steps-box:last-child {
+        padding-left: 3%;
+        margin-top: 70px;
+    }
+    .work-step {margin-bottom: 30px;}
+    .btn-app img {margin-right: 0;}
+    .app-screen {width: 60%;}
+    .city-feature {font-size: 85%; }
+    .plan-box ul {font-size: 80%}
+}
+/* small phone to small tablet [ from 481px to 767px] */
+@media only screen and (max-width : 767px) {
+    nav ul{display: none;}
+    html, body {font-size: 16px;}
+    .span-1-of-4 {
+        width: 48%;
+        margin: 1% 0 1% 2%;
+    }
+    .plan-box {font-size: 70%;}
+    .plan-box ul {font-size: 68%}
+    .icon-small {margin: 0}
+    .works-step div {
+        border: 1px solid #e67e22;
+        width: 30px;
+        height: 30px;
+        padding: 3px;
+        font-size: 120%;
+        margin-right: 15px;
+    }
+    .works-step {margin-bottom: 20px;}
+    .steps-box:last-child {margin-top: 50px;}
+    .btn-app img {height: 33px;}
+    .works-step:last-of-type {margin-bottom: 20px;}
+    .app-screen {width: 77%;}
+    .social-link {margin: 20px 35%;}
+    .social-link li {margin-right: 5px;}
+} 
+
+/* small phon screen [from 0 to 480px] */
+@media only screen and (max-width : 480px){
+    .hero-text-box h1{
+        margin-top: 176px;
+        font-size: 156%; 
+    }
+    .plan-box {margin-bottom: 20px;}
+    .plan-box ul {font-size: 160%;}
+    .meals-showcase li {width: 50%;}
+    .btn-app img {width: 38%;}
+    .social-link {
+        margin: 20px 33%;
+    }
+    
+}

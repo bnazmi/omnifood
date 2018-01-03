@@ -75,5 +75,6 @@
     .social-link {
         margin: 20px 33%;
     }
+    .btn:link, .btn:visited {padding: 10px 20px;}
     
 }

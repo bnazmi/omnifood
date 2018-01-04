@@ -596,3 +596,20 @@ footer p {
     text-align: center;
     margin-top: 30px;
 }
+
+/* ---------------------------- */
+/* Animation */
+/* ---------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    animation-duration: 1s;    
+}
+.js--wp-3.animated{animation-duration: 1s;}
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;    
+}

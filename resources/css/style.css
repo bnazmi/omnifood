@@ -220,12 +220,20 @@ header {
     float: left;
     margin-top: 20px;
 }
-
+.dark-logo{
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+    display: none;
+}
+/* Main navi */
 .main-nav {
     float: right;
     margin-top: 55px;
     list-style: none;
 }
+
 
 .main-nav li {
     display: inline-block;
@@ -249,6 +257,42 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/* sticky navbar */
+.sticky {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    box-shadow: 0 2px 2px rgb(185, 183, 183);
+    z-index: 9999;
+}
+
+.sticky .logo {display:none; }
+.sticky .dark-logo {display:block ;}
+
+.sticky .main-nav {
+    float: right;
+    margin-top: 15px;
+    list-style: none;
+}
+.sticky .main-nav a:link,
+.sticky .main-nav a:visited {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    padding: 20px 0;    
+    font-size: 90%;
+    border-bottom: 3px solid transparent;
+    -webkit-transition:  border-bottom 0.2s;
+    transition:  border-bottom 0.2s;
+}
+
+.sticky .main-nav a:hover,
+.sticky .main-nav a:active {
+    border-bottom: 3px solid #e67e22;
+}
 /* Features Section */
 
 .features-section .long-copy {

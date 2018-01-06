@@ -1,8 +1,10 @@
 $(document).ready(function() {
-    
+  
+   checksticky();
     /* For sticky navigation */
-    $('.js--features-section').waypoint(function(direction) { 
-        if(direction == "down"){
+    function checksticky(){
+      $('.js--features-section').waypoint(function(direction) { 
+        if(direction == "down" && !$('.js--mobile-icon').hasClass('ion-close-round')){
             $('nav').addClass('sticky');
         }else {
             $('nav').removeClass('sticky');
@@ -10,8 +12,25 @@ $(document).ready(function() {
         }
      }, {
         offset: '60px'
-      })
-      
+      });
+    }
+    /* Mobile icon event */
+    $('.mobile-icon').click(function(){
+      var icon = $('.js--mobile-icon');
+      if(icon.hasClass('ion-navicon-round')){
+        $('nav').addClass('float-main-nav animated feedInLeft');
+        icon.removeClass('ion-navicon-round');
+        icon.addClass('ion-close-round');
+        checksticky();
+        
+      }else {
+        $('nav').removeClass('float-main-nav');
+        icon.removeClass('ion-close-round');
+        icon.addClass('ion-navicon-round');
+        checksticky();
+      }
+    });
+
     /* Smooth Button scroll   */
     $('.js--scroll-to-plan').click(function () {
         $('html,body').animate({scrollTop : $('.js--plans-section').offset().top},1000)

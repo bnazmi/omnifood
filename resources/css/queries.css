@@ -36,12 +36,13 @@
 }
 /* small phone to small tablet [ from 481px to 767px] */
 @media only screen and (max-width : 767px) {
-    nav ul{display: none;}
     html, body {font-size: 16px;}
     .span-1-of-4 {
         width: 48%;
         margin: 1% 0 1% 2%;
     }
+    .mobile-icon {display: block;}
+    .main-nav {display: none;}
     .plan-box {font-size: 70%;}
     .plan-box ul {font-size: 68%}
     .icon-small {margin: 0}
